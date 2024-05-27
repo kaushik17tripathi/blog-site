@@ -1,8 +1,8 @@
 import styles from './Layout.module.css';
 import Link from 'next/link';
 import '../app/globals.css';
-import { HomeOutlined } from '@mui/icons-material';
 import { GoBook } from 'react-icons/go';
+import { GoHome } from "react-icons/go";
 
 export const metadata = {
   title: 'Dev Dialogue',
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
             <ul className={styles.links}>
               <li>
                 <Link href="/" passHref>
-                  <HomeOutlined className={styles.icon} />
+                  <GoHome className={styles.icon} />
                 </Link>
               </li>
             </ul>
