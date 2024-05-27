@@ -1,0 +1,49 @@
+.blogList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  flex-direction: row;
+  gap: 20px;
+}
+
+.blogPost {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.blogPost h2 a {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.blogPost h2 a:hover {
+  color: rgb(31, 72, 54);
+  text-decoration: none;
+}
+.blogPost p {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 16px 0;
+}
+.blogPost small {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 16px;
+}
+
+.searchInput {
+  padding: 5px 10px;
+  margin-left: 35px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  border-color: var(--secondary-color);
+}
+
+.searchInput:focus {
+  outline: none;
+  background-color: var(--secondary-color);
+}
+
